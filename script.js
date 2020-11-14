@@ -1,4 +1,4 @@
-const quote = [
+const quotes = [
     {
         name:'Stephen King',
         quote:'Get busy living or get dying.'
@@ -28,9 +28,9 @@ const quote = document.querySelector('#quote');
 quoteBtn.addEventListener('click', displayQuote);
 
 function displayQuote (){
-    let number = Math.floor(Math.random()*quote.length);
-    quoteAuthor.innerHTML = quote[number].name;
-    quote.innerHTML = 'sarah';
+    let number = Math.floor(Math.random()*quotes.length);
+    quoteAuthor.innerHTML = quotes[number].name;
+    quote.innerHTML = quotes[number].quote;
 }
 
 
